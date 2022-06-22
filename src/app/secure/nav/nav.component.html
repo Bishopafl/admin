@@ -1,0 +1,10 @@
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <div class="navbar-brand ">
+    <a class="nav-link text-white px-3" href="#">Company name</a>
+  </div>
+
+
+  <div class="d-inline-flex navbar-brand mx-0">
+      <a class="nav-link text-white px-3" routerLink="/profile">{{user?.first_name}} {{user?.last_name}}</a>
+      <a class="nav-link text-white px-3" href="javascript:void(0)" (click)="logout()">Sign out</a>
+  </div>
